@@ -1,0 +1,218 @@
+/* Global Styles - Hacker Theme */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    color: #00ff00;  /* Verde brilhante */
+}
+
+body {
+    background-color: #000; /* Fundo preto */
+    color: #00ff00; /* Texto verde */
+    line-height: 1.6;
+    font-size: 16px;
+    text-shadow: 0 0 5px #00ff00;  /* Efeito brilhante */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #111; /* Fundo preto mais claro */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #00ff00;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: #222; /* Fundo levemente mais claro no hover */
+    border-radius: 5px;
+}
+
+/* Hero Section - Terminal style */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #000; /* Fundo preto */
+}
+
+.hero-content {
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    color: #00ff00; /* Verde brilhante */
+    text-shadow: 0 0 10px #00ff00;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #00ff00;
+}
+
+.personal-info {
+    margin-top: 20px;
+    color: #00ff00;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #00ff00;
+    font-size: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* About Section */
+.about-section {
+    padding: 50px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #111;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.about-img {
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+/* Education Section */
+.education-section {
+    padding: 50px;
+    background-color: #000;
+    text-align: center;
+}
+
+.education-content {
+    display: flex;
+    justify-content: center;
+}
+
+.education-item {
+    margin: 20px;
+    text-align: center;
+}
+
+.education-item p {
+    margin: 10px 0;
+}
+
+.education-item a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #00ff00;
+    background-color: #111;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.education-item a:hover {
+    background-color: #333;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 50px;
+    background-color: #111;
+    text-align: center;
+}
+
+.projects-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ff00;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card h3 a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+/* Footer */
+.footer {
+    background-color: #111;
+    color: #00ff00;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content a {
+    color: #00ff00;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.footer-content a:hover {
+    background-color: #222;
+    border-radius: 5px;
+}
+
+/* Cursor Piscando */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.hero-content h1::after {
+    content: '|';
+    display: inline-block;
+    margin-left: 5px;
+    font-weight: bold;
+    animation: blink 1s infinite;
+}
